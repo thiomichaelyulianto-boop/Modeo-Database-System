@@ -1,3 +1,4 @@
+-- SOAL 1
 CREATE TABLE FashionCategories (
     CategoryID CHAR(5) PRIMARY KEY,
     CategoryName VARCHAR(50) NOT NULL,
@@ -102,6 +103,7 @@ CREATE TABLE SalesTransactionDetail (
     CONSTRAINT SalesTransactionDetail_ItemID_FK FOREIGN KEY (ItemID) REFERENCES FashionItems(ItemID)
 );
 
+-- SOAL 2
 INSERT ALL 
     INTO FashionCategories(CategoryID, CategoryName, CategoryDescription) VALUES ('CA001', 'Evening Wear', 'Elegant attire for evening occasions')
     INTO FashionCategories(CategoryID, CategoryName, CategoryDescription) VALUES ('CA002', 'Streetwear', 'Casual street fashion')
